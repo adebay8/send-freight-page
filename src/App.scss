@@ -1,5 +1,163 @@
+@import "./styles/default.scss";
+
 .main {
   max-width: 1200px;
   margin: 0 auto;
   min-height: 50vh;
+  display: flex;
+  margin-top: 20px;
+}
+
+.side-content {
+  padding: 10px;
+  width: 60px;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  margin: 0.83rem 0 15px 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 11.5px;
+  color: #999999;
+  font-weight: normal;
+}
+
+.services {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.service {
+  height: 60px;
+  border: 1px solid #b4b3b3;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+
+  &.active {
+    background-color: #0746a7;
+    span {
+      color: white !important;
+    }
+  }
+}
+
+.service-title {
+  color: #999999;
+  margin: auto 0;
+}
+
+.service-icon {
+  position: absolute;
+  right: 0;
+  color: #81868a;
+  bottom: 0;
+
+  &.airplane {
+    bottom: -25px;
+    right: -30px;
+  }
+
+  &.truck {
+    transform: scaleX(-1);
+    bottom: -15px;
+    right: -10px;
+  }
+}
+
+.location-details {
+  gap: 1.5rem;
+  height: 38px;
+  margin-bottom: 30px;
+}
+
+.type {
+  div {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    font-size: 13px;
+    color: #666666;
+
+    &:first-child {
+      border-right: none;
+    }
+  }
+}
+
+.time-details {
+  height: 38px;
+  gap: 1.5rem;
+}
+
+.dangerous-selector {
+  span {
+    font-size: 13px;
+    font-weight: 550;
+    margin-left: 10px;
+  }
+}
+
+.cargo-detail-selector {
+  padding: 2px;
+  background-color: #f1f2f6;
+  width: fit-content;
+  border-radius: 5px;
+  margin-bottom: 30px;
+
+  div {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #d8d9dd;
+    cursor: pointer;
+
+    &.active {
+      background-color: white;
+      color: #0746a6;
+    }
+  }
+}
+
+.volume-weight-input {
+  gap: 1.5rem;
+}
+
+.total-input {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #b4b3b3;
+  width: 150px;
+
+  label {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 11px;
+    padding: 2px;
+    font-weight: bold;
+  }
+
+  input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+
+  span {
+    font-size: 12px;
+  }
 }

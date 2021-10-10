@@ -1,6 +1,10 @@
 import "./App.scss";
 import Navbar from "./components/Navbar";
 import AppIcon from "./components/icons/Icon";
+import ServiceContainer from "./containers/ServiceContainer";
+import LocationContainer from "./containers/LocationContainer";
+import DetailsContainer from "./containers/DetailsContainer";
+import AdditionalServiceContainer from "./containers/AdditionalServiceContainer";
 
 function App() {
   return (
@@ -15,17 +19,10 @@ function App() {
           <p className="subtitle">
             Fill in the information below toget a quote or create a new booking
           </p>
-          <div className="container">
-            <h4 className="section-title">Select a service</h4>
-            <div className="services">
-              <div className="service">
-                <span>Air freight</span>
-                <div className="service-icon">
-                  <AppIcon type="md" name="ic_search" size={25} />
-                </div>
-              </div>
-            </div>
-          </div>
+          <ServiceContainer />
+          <LocationContainer />
+          <DetailsContainer />
+          <AdditionalServiceContainer />
         </div>
       </main>
     </div>

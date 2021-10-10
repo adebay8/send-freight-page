@@ -14,20 +14,34 @@
   margin: 0 auto;
 }
 
+.search-field {
+  padding: 5px 10px 5px 0px;
+  background-color: #3a6bb8;
+  width: 550px;
+
+  .input-field,
+  input {
+    background-color: transparent;
+
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #fbfbf577;
+      opacity: 1; /* Firefox */
+    }
+  }
+}
+
 .action-buttons {
   display: flex;
   align-items: center;
-
-  & > .request-quote {
-    margin-right: 10px;
-  }
 }
 
 .request-quote {
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border: 1px solid white !important;
   transition: 0.3s;
+  margin-right: 10px;
 
   &:hover {
     background-color: white;

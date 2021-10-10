@@ -1,0 +1,16 @@
+.select-field {
+  background-color: #f3f3f3;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0 10px;
+}
+
+select {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 10px 0;
+}

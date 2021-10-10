@@ -2,7 +2,8 @@
 
 .button {
   border-radius: 4px;
-  padding: 8px 15px;
+  padding: 10px 16px;
+  font-size: 12px;
   color: white;
   cursor: pointer;
   display: flex;
@@ -10,4 +11,50 @@
   justify-content: center !important;
   border: 1px solid transparent;
   outline: none;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.section-header {
+  h4 {
+    margin: 0;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.justify-between {
+    justify-content: space-between;
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+}
+
+.additional-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.additional-service {
+  margin-left: 20px;
+  .title {
+    margin: 0;
+    font-weight: 600;
+  }
+  .subtitle {
+    color: #999999;
+  }
 }
