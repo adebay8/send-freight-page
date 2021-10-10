@@ -1,0 +1,40 @@
+@import "../../styles/default.scss";
+
+.navbar {
+  padding: 20px;
+  background-color: #0746a6;
+  color: white;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+
+  & > .request-quote {
+    margin-right: 10px;
+  }
+}
+
+.request-quote {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: white;
+    color: #0746a6;
+  }
+}
+
+.book-shipment {
+  background-color: #5cc685;
+}
