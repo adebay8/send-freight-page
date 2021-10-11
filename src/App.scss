@@ -6,6 +6,12 @@
   min-height: 50vh;
   display: flex;
   margin-top: 20px;
+
+  @media screen and (max-width: 1200px) {
+    width: calc(100vw - 30px);
+    margin-left: 10px;
+    margin-right: 20px;
+  }
 }
 
 .side-content {
@@ -14,7 +20,7 @@
 }
 
 .content {
-  flex: 1;
+  width: calc(100% - 60px);
 }
 
 .title {
@@ -31,7 +37,7 @@
 .services {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -56,6 +62,7 @@
 .service-title {
   color: #999999;
   margin: auto 0;
+  font-size: 14px;
 }
 
 .service-icon {
@@ -69,17 +76,43 @@
     right: -30px;
   }
 
+  &.boat {
+    bottom: -25px;
+    right: -25px;
+    height: 100px;
+
+    img {
+      width: auto;
+      height: 100%;
+      filter: invert(50%);
+    }
+  }
+
   &.truck {
     transform: scaleX(-1);
     bottom: -15px;
     right: -10px;
   }
+
+  &.officer {
+    height: 100px;
+
+    bottom: -25px;
+    right: -40px;
+    height: 90px;
+
+    img {
+      width: auto;
+      height: 100%;
+      filter: invert(50%);
+    }
+  }
 }
 
 .location-details {
   gap: 1.5rem;
-  height: 38px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .type {
@@ -97,8 +130,8 @@
 }
 
 .time-details {
-  height: 38px;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .dangerous-selector {
@@ -159,5 +192,6 @@
 
   span {
     font-size: 12px;
+    color: #686868aa;
   }
 }

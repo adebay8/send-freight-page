@@ -9,11 +9,12 @@
   position: relative;
   background: #efeef2;
   cursor: pointer;
-  border: 2px solid #0746a6;
+  border: 2px solid #efeef2;
   overflow: hidden;
 
   &.active {
     background: #0746a6;
+    border-color: #0746a6;
   }
 }
 
